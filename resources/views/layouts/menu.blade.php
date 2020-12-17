@@ -37,9 +37,36 @@
     </a>
     <ul class="nav nav-treeview">
         <li class="nav-item">
+            <a href="{{ route('profile')}}" class="nav-link ">
+                <i class="fa fa- nav-icon"></i>
+                <p>Profile Setting</p>
+            </a>
+        </li>
+    </ul>
+</li>
+
+<li class="nav-item has-treeview ">
+    <a href="#" class="nav-link ">
+        <i class="nav-icon fas fa-user-alt"></i>
+        <p>
+        Portfolio
+        <i class="right fas fa-angle-left"></i>
+        </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+            <a href="{{ route('image')}}" class="nav-link ">
+                <i class="fa fa- nav-icon"></i>
+                <p>Images</p>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
             <a href="#" class="nav-link ">
                 <i class="fa fa- nav-icon"></i>
-                <p>Profile Update</p>
+                <p>System Overview</p>
             </a>
         </li>
     </ul>

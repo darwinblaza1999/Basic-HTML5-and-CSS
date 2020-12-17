@@ -15,9 +15,9 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-color:#ff3d51;">
 <div class="login-box">
-    <div class="login-logo">
+    <div class="login-logo" >
         <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
     </div>
     <!-- /.login-logo -->

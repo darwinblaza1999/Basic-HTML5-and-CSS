@@ -28,3 +28,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/profile', [App\Http\Controllers\UserController::class, 'index'])->name('profile');
+
+// -------------------image-------------------
+Route::get('/image', [App\Http\Controllers\ImageController::class, 'index'])->name('image');
+// Route::get('/image-upload', [UploadImageController::class, 'index'])->name('image.upload.index');
+// Route::post('/image-upload/store', [UploadImageController::class, 'store'])->name('image.upload.store')
+
