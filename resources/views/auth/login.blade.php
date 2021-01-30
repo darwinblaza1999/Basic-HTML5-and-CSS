@@ -15,8 +15,14 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 </head>
-<body class="hold-transition login-page" style="background-color:#ff3d51;">
+<body class="hold-transition login-page" style="background-color:#dbe4eb;">
+<!-- <div class="navbar navbar-nav inline-block pull-top" style="color:yellow;">
+<p>adsasa</p>
+</div> -->
 <div class="login-box">
+    <!-- <div class="header">
+        <a class="pull-right" href="">&times;</a>
+    </div> -->
     <div class="login-logo" >
         <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
     </div>
@@ -58,7 +64,7 @@
                     <span class="error invalid-feedback">{{ $message }}</span>
                     @enderror
 
-                </div>
+                </div><br>
 
                 <div class="row">
                     <div class="col-8">
@@ -82,12 +88,22 @@
                 <a href="{{ route('register') }}" class="text-center">Register a new membership</a>
             </p>
         </div>
+        
         <!-- /.login-card-body -->
     </div>
 
 </div>
 <!-- /.login-box -->
 
+    <!-- Main Footer -->
+    <!-- <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+            <b>Version</b>2020
+        </div>
+        <strong>Copyright &copy; 2020 <a href="https://adminlte.io">Darwin Yamyamin</a>.</strong> All rights
+        reserved.
+    </footer> -->
+<!-- /.login-box -->
 <script src="{{ mix('js/app.js') }}" defer></script>
 
 </body>

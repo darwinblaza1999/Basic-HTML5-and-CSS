@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,19 +21,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/profile', [App\Http\Controllers\UserController::class, 'index'])->name('profile');
-
-// -------------------image-------------------
-Route::get('/image', [App\Http\Controllers\ImageController::class, 'index'])->name('image');
-// Route::get('/image-upload', [UploadImageController::class, 'index'])->name('image.upload.index');
-// Route::post('/image-upload/store', [UploadImageController::class, 'store'])->name('image.upload.store')
-
+//Route::resource('users', UserController::class);
+// Route::get('/profile', [UserController::class, 'show']);
+//Route::resource('user', 'UserController');
+//Route::resource('user', UserController::class);
+// Route::resources([
+//     'users' => UserController::class
+// ]);
+Route::resource('users', UserController::class);
+//Route::resource('profile/{user}',UserController::class);
+//Route::post('/users', [UserController::class, 'index']);

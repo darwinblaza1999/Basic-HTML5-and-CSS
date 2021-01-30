@@ -19,7 +19,7 @@
 <body class="hold-transition sidebar-mini layout-fixed" style="backgroud-color:#ff3d51;">
 <div class="wrapper">
     <!-- Main Header -->
-    <nav class="main-header navbar navbar-expand navbar-red navbar-light">
+    <nav class="main-header navbar navbar-expand navbar-cyan navbar-light">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -42,7 +42,7 @@
                              alt="User Image"> -->
                         <p>
                             {{ Auth::user()->name }}
-                            <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>
+                            
                         </p>
                     </li>
                     

@@ -21383,7 +21383,7 @@ html.maximized-card {
 .login-page,
 .register-page {
   align-items: center;
-  background: #e9ecef;
+  background: #dbe4eb;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -21392,7 +21392,8 @@ html.maximized-card {
 
 .login-box,
 .register-box {
-  width: 360px;
+  background-color: cyan;
+  width: 420px;
 }
 
 @media (max-width: 576px) {
@@ -21405,7 +21406,7 @@ html.maximized-card {
 
 .login-card-body,
 .register-card-body {
-  background: #ffffff;
+  background: cyan;
   border-top: 0;
   color: #666;
   padding: 20px;
