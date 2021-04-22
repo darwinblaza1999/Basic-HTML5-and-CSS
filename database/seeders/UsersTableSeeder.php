@@ -16,13 +16,13 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name'      => 'Darwin Yamyamin',
-            'Address'   => 'Bulacao',
-            'Age'        => '21',
+            'address'   => 'Bulacao',
+            //'Age'        => '21',
             'email'     => 'dbyamyamin@gmail.com',
             'email_verified_at' => '2020-12-19 10:52:53',
             'password'  => 'darwinSS1999',
-            'status'    => '1',
-            'type'      => '1',
+            //'status'    => '1',
+            //'type'      => '1',
         ]);
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,19 +16,41 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('about');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//Route::resource('users', UserController::class);
-// Route::get('/profile', [UserController::class, 'show']);
-//Route::resource('user', 'UserController');
-//Route::resource('user', UserController::class);
-// Route::resources([
-//     'users' => UserController::class
-// ]);
-Route::resource('users', UserController::class);
-//Route::resource('profile/{user}',UserController::class);
-//Route::post('/users', [UserController::class, 'index']);
+
+Route::get('/download', function () {
+    $_FILES = public_path()."/download/Resumes.docx";
+
+    $headers = array(
+        "Content-Type: application/png",
+    );
+
+    return Response::download($_FILES, "Resumes.docx, $headers");
+
+});
+
+// Route::resource('/users', UserController::class);
+
+Route::namespace('App\\Http\\Controllers')->group(function(){
+    Route::resources([
+        'contact' => 'ContactController'
+    ]);
+    Route::resources([
+        'about' => 'AboutController'
+    ]);
+    Route::resources([
+        'portfolio' => 'PortfolioController'
+    ]);
+    Route::resources([
+        'blog' =>'BlogController'
+    ]);
+    Route::resources([
+        'login' =>'LoginController'
+    ]);
+});
+

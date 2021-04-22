@@ -63,7 +63,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('profile');
     }
 
     /**
@@ -87,5 +87,9 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function profile()
+    {
+        return view('profile');
     }
 }
