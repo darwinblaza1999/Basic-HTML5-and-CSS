@@ -12,7 +12,7 @@
                       <div class="col s12 m8 l6">
                         <div class="contact-form">
                             <p class="login-box-msg"><center><i>Sign in to start your session</i></center></p>
-                            <form method="post" action="{{ url('/login') }}">
+                            <form method="post" action="{{ route('login.store') }}">
                                 @csrf
 
                                 <div class="input-group mb-12">

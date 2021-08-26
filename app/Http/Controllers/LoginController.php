@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Hash;
+use Session;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 class LoginController extends Controller
 {
+    use AuthenticatesUsers;
+
     /**
      * Display a listing of the resource.
      *
@@ -21,10 +27,29 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        // $request->validate([
+        //     'email' => 'required',
+        //     'password' => 'required',
+        // ]);
+
+        // $credentials = $request->only('email', 'password');
+        // if (Auth::attempt($credentials)) {
+        //     return redirect('home')->withSuccess('Signed in');
+        // }
+
+        // return redirect("login")->withSuccess('Login details are not valid');
     }
+
+    // public function dashboard()
+    // {
+    //     if(Auth::check()){
+    //         return view('home');
+    //     }
+
+    //     return redirect("login")->withSuccess('You are not allowed to access');
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -34,7 +59,18 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            return redirect('home')->withSuccess('Signed in');
+        }
+
+
+        return redirect("login")->withSuccess('Login details are not valid');
     }
 
     /**
@@ -81,4 +117,10 @@ class LoginController extends Controller
     {
         //
     }
+    // public function signOut() {
+    //     Session::flush();
+    //     Auth::logout();
+
+    //     return Redirect('login');
+    // }
 }

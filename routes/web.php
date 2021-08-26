@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,4 +54,7 @@ Route::namespace('App\\Http\\Controllers')->group(function(){
         'login' =>'LoginController'
     ]);
 });
+// Route::get('dashboard', [LoginController::class, 'dashboard']);
+// Route::get('login', [LoginController::class, 'index']);
+// Route::get('signout', [LoginAuthController::class, 'signOut']);
 
