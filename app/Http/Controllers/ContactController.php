@@ -46,6 +46,8 @@ class ContactController extends Controller
             $contact->email = $request['email'];
             $contact->subject = $request['subject'];
             $contact->message = $request['message'];
+            //dd($contact );
+            //die();
         $contact->save();
         return redirect('/contact');
 

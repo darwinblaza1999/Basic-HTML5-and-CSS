@@ -70,7 +70,7 @@ class LoginController extends Controller
         }
 
 
-        return redirect("login")->withSuccess('Login details are not valid');
+        return redirect("login.index")->withSuccess('Login details are not valid');
     }
 
     /**

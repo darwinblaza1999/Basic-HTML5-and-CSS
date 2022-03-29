@@ -53,6 +53,8 @@ Route::namespace('App\\Http\\Controllers')->group(function(){
     Route::resources([
         'login' =>'LoginController'
     ]);
+
+    Route::post('addContact', [UserController::class, 'store']);
 });
 // Route::get('dashboard', [LoginController::class, 'dashboard']);
 // Route::get('login', [LoginController::class, 'index']);
