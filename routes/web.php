@@ -17,7 +17,7 @@ use App\Http\Controllers;
 */
 
 Route::get('/', function () {
-    return view('about');
+    return view('welcome');
 });
 
 Auth::routes();

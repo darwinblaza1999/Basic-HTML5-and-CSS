@@ -195,10 +195,11 @@ nav .brand-logo img {
 
 
 .profile-img {
-  border: 5px solid #fff;
+  border-radius: 100%;
+  /* border: 5px solid #fff; */
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   height: 130px;
-  margin: 0 auto;
+  margin: 1px;
   width: 140px;
 }
 
@@ -281,6 +282,13 @@ nav .brand-logo img {
   float: left;
   width: 100%;
 }
+#login{
+    background-color: #fff;
+    display: inline;
+    padding: 60px 0;
+    float: left;
+    width: 100%;
+  }
 
 
 .skill-inner{

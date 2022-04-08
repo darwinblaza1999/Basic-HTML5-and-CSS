@@ -45,19 +45,17 @@
                 <!-- Image Based Logo -->
                  <!-- <a href="index.html" class="brand-logo"><img src="img/" alt="logo img"></a>  -->
                 <ul class="right hide-on-med-and-down custom-nav menu-scroll">
-                  <li><a href="{{ route('about.index') }}">About Me</a></li>
-                  <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li>
-                  <li><a href="{{ route('blog.index') }}">Blog</a></li>
-                  <li><a href="{{ route('contact.index') }}">Contact</a></li>&nbsp;
-                  <li><a href="{{ route('login.index') }}">Login | Register</a></li>
+                  <li><a href="#about">About Me</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#login">Login | Register</a></li>
                 </ul>
                 <!-- For Mobile View -->
                 <ul id="slide-out" class="side-nav menu-scroll">
-                    <li><a href="{{ route('about.index') }}">About Me</a></li>
-                    <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li>
-                    <li><a href="{{ route('blog.index') }}">Blog</a></li>
-                    <li><a href="{{ route('contact.index') }}">Contact</a></li>&nbsp;
-                    <li><a href="{{ route('login.index') }}">Login | Register</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#login">Login | Register</a></li>
 
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -66,49 +64,10 @@
           </nav>
         </div>
       </header>
-
-      <div class="main-wrapper">
-        <main role="main">
-            <!-- START HOME SECTION -->
-            <section id="home">
-                <div class="overlay-section">
-                <div class="container">
-                    <div class="row">
-                    <div class="col s12">
-                        <div class="home-inner">
-                        <h1 class="home-title">HI! I'm <span>Darwin  Yamyamin</span></h1>
-                        <p>I'm a Software Developer</p>
-                        <a class="hire-me-btn btn waves-effect waves-light btn-large" href="#login">Hire me<i class="mdi-content-send left"></i>
-                        </a>
-                        <!-- Call to About Button -->
-                        <button class="btn btn-floating waves-effect waves-light btn-large white call-to-about"><i class="material-icons">play_for_work</i></button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-            @yield('content')
-        </main>
-         <!-- Start Footer Bottom -->
-         <div class="footer-bottom" style="background-color:#dbe4eb ">
-            <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <div class="footer-inner">
-                    <!-- Bottom to Up Btn -->
-                    <button class="btn-floating btn-large up-btn"><i class="mdi-navigation-expand-less"></i></button>
-                   <p class="design-info">Copyright &copy; 2021  <a href="#">Portfolio.net</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
+        @yield('content')
       <!-- jQuery Library -->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> --}}
+      <script src="{{ asset('b-template/js/jquery.min.js') }}"></script>
       <!-- Materialize js -->
       <script type="text/javascript" src="{{ asset('b-template/js/materialize.min.js') }}"></script>
       <!-- Skill Progress Bar -->
@@ -117,7 +76,8 @@
       <!-- Owl slider -->
       <script src="{{ asset('b-template/js/owl.carousel.min.js') }}"></script>
       <!-- Mixit slider  -->
-      <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+      <script src="{{ asset('b-template/js/mixitup.min.js') }}"></script>
+      {{-- <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script> --}}
       <!-- counter -->
       <script src="{{ asset('b-template/js/waypoints.min.js') }}"></script>
       <script src="{{ asset('b-template/js/jquery.counterup.min.js') }}"></script>

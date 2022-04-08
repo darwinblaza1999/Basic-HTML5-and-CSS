@@ -11,7 +11,7 @@ a {
 }
 
 .side-nav li:hover{
-  background-color: #37c6f5;  
+  background-color: #37c6f5;
 }
 .btn ,.btn-large{
   background-color: #37c6f5;
@@ -84,13 +84,13 @@ a {
   color: #37c6f5;
 }
 #testimonial{
-  background-color: #37c6f5;  
+  background-color: #37c6f5;
 }
 .testimonial-content h3 {
   color: #37c6f5;
 }
 .footer-top{
-  background-color:#37c6f5; 
+  background-color:#37c6f5;
 }
 input[type="text"]:focus:not([readonly]) + label,
 input[type="password"]:focus:not([readonly]) + label,
@@ -120,7 +120,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #37c6f5;
 }
 .submit-btn{
-  color: #37c6f5;  
+  color: #37c6f5;
 }
 .submit-btn:hover,
 .submit-btn:focus{
@@ -144,13 +144,13 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: #37c6f5 !important;
 }
 .reply-btn:hover{
-  background-color: #37c6f5; 
+  background-color: #37c6f5;
 }
 .pagination li.active{
   background-color: #37c6f5;
 }
 .card .card-action a {
-  color: #37c6f5;  
+  color: #37c6f5;
 }
 .tagcloud a:hover,
 .tagcloud a:focus{
@@ -165,11 +165,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: #37c6f5;
 }
 .submit-btn{
-  color: #37c6f5;  
+  color: #37c6f5;
 }
 .side-nav li:hover,
 .side-nav li.active {
-  background-color: #37c6f5; 
+  background-color: #37c6f5;
 }
 .progress .indeterminate {
   background-color: #37c6f5;

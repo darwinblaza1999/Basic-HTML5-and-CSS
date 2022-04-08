@@ -1,6 +1,6 @@
-@extends('layouts_welcome.app')
+{{-- @extends('layouts_welcome.app') --}}
 
-@section('content')
+@section('contact')
     <div class="main-wrapper">
         <!-- Start Blog -->
         <section id="blog">

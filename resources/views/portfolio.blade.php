@@ -1,6 +1,6 @@
-@extends('layouts_welcome.app')
+@extends('layouts_welcome.about')
 
-@section('content')
+@section('portfolio')
 <div class="main-wrapper">
     <!-- Start Portfolio -->
     <section id="portfolio">

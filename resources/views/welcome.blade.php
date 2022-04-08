@@ -3,6 +3,27 @@
 @section('content')
 <div class="main-wrapper">
     <main role="main">
+        <!-- START HOME SECTION -->
+        <section id="home">
+            <div class="overlay-section">
+            <div class="container">
+                <div class="row">
+                <div class="col s12">
+                    <div class="home-inner">
+                    <h1 class="home-title">HI! I'm <span>Darwin  Yamyamin</span></h1>
+                    <p>I'm a Software Developer</p>
+                    <a class="hire-me-btn btn waves-effect waves-
+                     btn-large" href="#login">Hire me<i class="mdi-content-send left"></i>
+                    </a>
+                    <!-- Call to About Button -->
+                    {{-- <button class="btn btn-floating waves-effect waves-light btn-large white call-to-about"><i class="material-icons">play_for_work</i></button> --}}
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
           <!-- START ABOUT SECTION -->
           <section id="about">
             <div class="container">
@@ -40,8 +61,7 @@
               </div>
             </div>
           </section>
-          <!-- Start Resume -->
-          <section id="#">
+
             <!-- Start Skill -->
             <section id="skill">
               <div class="container">
@@ -80,242 +100,9 @@
                 </div>
               </div>
             </section>
-            <!-- Start Experience -->
-            <section id="experience">
-              <div class="container">
-                <div class="experience-inner">
-                  <h2 class="title">Experience</h2>
-                  <p>I have experience using this languages</p>
-                  <div id="owl-carousel" class="experience-slider row">
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title"><b>HTML5</b></h2>
-                          <img class="activator" src="b-template/img/logo/html5.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator reveal-title">UX/UI Designer<i class="material-icons right">more_vert</i></span>
 
-                          </div>
-                          <div class="card-reveal">
-                            <span class="card-title reveal-title">UX/UI Designer<i class="material-icons right">close</i></span>
-                            <p>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML,
-                                with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</p>
-                          </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">CSS3</h2>
-                          <img class="activator" src="b-template/img/logo/CSS.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator reveal-title">UX/UI Designer<i class="material-icons right">more_vert</i></span>
-                          </div>
-                          <div class="card-reveal">
-                            <span class="card-title reveal-title">UX/UI Designer<i class="material-icons right">close</i></span>
-                            <p>CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used for describing the presentation
-                                 (i.e. the layout and formatting) of the web pages.</p>
-                          </div>
-                      </div>
-                    </div>
-
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">PHP</h2>
-                        <img class="activator" src="b-template/img/logo/php.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator reveal-title">NATIVE<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title reveal-title">NATIVE<i class="material-icons right">close</i></span>
-                            <p>The PHP Hypertext Preprocessor (PHP) is a programming language that allows web developers to create dynamic content that interacts
-                                 with databases. PHP is basically used for developing web based software applications. This tutorial helps you to build your base with PHP.</p>
-                        </div>
-                    </div>
-                    </div>
-
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                        <div class="card">
-                          <div class="card-image waves-effect waves-block waves-light">
-                          <h2 class="experience-title">MYSQL</h2>
-                            <img class="activator" src="b-template/img/logo/mysql.png">
-                          </div>
-                          <div class="card-content">
-                              <span class="card-title activator reveal-title">Database<i class="material-icons right">more_vert</i></span>
-                              <!-- <p><a href="#">Windows Phone</a></p> -->
-                            </div>
-                            <div class="card-reveal">
-                              <span class="card-title reveal-title">Database<i class="material-icons right">close</i></span>
-                              <!-- <a href="#" class="card-subtitle">Windows Phone</a> -->
-                              <p></p>
-                            </div>
-                        </div>
-                      </div>
-
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">JAVASCRIPT</h2>
-                          <img class="activator" src="b-template/img/logo/javascript.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">ES6<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">ES6<i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                        <div class="card">
-                          <div class="card-image waves-effect waves-block waves-light">
-                          <h2 class="experience-title">JAVA</h2>
-                            <img class="activator" src="b-template/img/logo/java.png">
-                          </div>
-                          <div class="card-content">
-                            <span class="card-title activator reveal-title">Android<i class="material-icons right">more_vert</i></span>
-                          </div>
-                          <div class="card-reveal">
-                            <span class="card-title reveal-title">Android<i class="material-icons right">close</i></span>
-                            <p></p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">LARAVEL</h2>
-                          <img class="activator" src="b-template/img/logo/laravel.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">8.0<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title"><i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">VUE.JS</h2>
-                          <img class="activator" src="b-template/img/logo/vuejs.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">3.0<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title"><i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                     <!-- Start Single Experience -->
-                     <div class="col s12">
-                        <div class="card">
-                          <div class="card-image waves-effect waves-block waves-light">
-                          <h2 class="experience-title">NODE.JS</h2>
-                            <img class="activator" src="b-template/img/logo/nodejs.png">
-                          </div>
-                          <div class="card-content">
-                            <span class="card-title activator reveal-title"> <i class="material-icons right">more_vert</i></span>
-                          </div>
-                          <div class="card-reveal">
-                            <span class="card-title reveal-title"><i class="material-icons right">close</i></span>
-                            <p></p>
-                          </div>
-                        </div>
-                      </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">C#</h2>
-                          <img class="activator" src="b-template/img/logo/csharp.png">
-                        </div>
-                        <div class="card-content">
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title"><i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">ASP.NET CORE MVC</h2>
-                          <img class="activator" src="b-template/img/logo/asp.net.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">WEB SERVICES<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title"><i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">ANGULAR</h2>
-                          <img class="activator" src="b-template/img/logo/angular.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">8.0<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title"><i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">WORDPRESS</h2>
-                          <img class="activator" src="b-template/img/logo/wordpress.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title"><i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title"><i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- owl navigation -->
-                  <div class="customNavigation">
-                    <a class="btn prev btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-left brand-text"></i></a>
-                    <a class="btn next btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-right brand-text"></i></a>
-                  </div>
-                </div>
-              </div>
-            </section>
             <!-- Start Education -->
-            <section id="edcuation">
+            <section id="education">
               <div class="container">
                 <div class="education-inner">
                   <h2 class="title">Education</h2>
@@ -402,7 +189,7 @@
                 </div>
               </div>
             </section>
-          </section>
+
           <!-- Start Portfolio -->
           <section id="portfolio">
             <div class="portfolio-top">
@@ -480,35 +267,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-          <!-- Start Facts -->
-          <section id="facts">
-            <div class="facts-overlay">
-              <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <div class="facts-inner">
-                    <div class="row">
-                      <div class="col s12 m4 l4">
-                        <div class="single-facts waves-effect waves-block waves-light">
-                          <i class="material-icons">work</i>
-                          <span class="counter">0</span>
-                          <span class="counter-text">Project Completed</span>
-                        </div>
-                      </div>
-                      <div class="col s12 m4 l4">
-                        <div class="single-facts waves-effect waves-block waves-light">
-                          <i class="material-icons">supervisor_account</i>
-                          <span class="counter">0</span>
-                          <span class="counter-text">Achievements</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             </div>
           </section>
 
@@ -613,7 +371,7 @@
           </section>
 
           {{-- Login --}}
-        <section id="resume">
+          <section id="login">
             <div class="container">
               <div class="education-inner">
                 <h2 class="title"><i>Signin / Signup</i></h2>
@@ -622,7 +380,7 @@
                       <div class="col s12 m8 l6">
                         <div class="contact-form">
                             <p class="login-box-msg"><center><i>Sign in to start your session</i></center></p>
-                            <form method="post" action="{{ url('/login') }}">
+                            <form method="post" action="{{ route('login.store') }}">
                                 @csrf
 
                                 <div class="input-group mb-12">
@@ -823,36 +581,22 @@
                 </div>
               </div>
             </div>
-            <!-- Start Footer Bottom -->
-            <div class="footer-bottom">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12">
-                    <div class="footer-inner">
-                      <!-- Bottom to Up Btn -->
-                      <button class="btn-floating btn-large up-btn"><i class="mdi-navigation-expand-less"></i></button>
-                     <p class="design-info">Copyright &copy; 2021  <a href="#">Portfolio.net</a></p>
+             <!-- Start Footer Bottom -->
+                <div class="footer-bottom" style="background-color:#dbe4eb ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                            <div class="footer-inner">
+                                <!-- Bottom to Up Btn -->
+                                <button class="btn-floating btn-large up-btn"><i class="mdi-navigation-expand-less"></i></button>
+                            <p class="design-info">Copyright &copy; 2021  <a href="#">Portfolio.net</a></p>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
           </footer>
         </main>
       </div>
 @endsection`
 
-<script type="text/javascript">
-   function visibility3() {
-  var x = document.getElementById('login_password');
-  if (x.type === 'password') {
-    x.type = "text";
-    $('#eyeShow').show();
-    $('#eyeSlash').hide();
-  }else {
-    x.type = "password";
-    $('#eyeShow').hide();
-    $('#eyeSlash').show();
-  }
-}
-</script>
