@@ -23,7 +23,13 @@ class AboutController extends Controller
      */
     public function create()
     {
-        //
+        $file= public_path(). "/download/Resumes.pdf";
+
+        $headers = array(
+              'Content-Type: application/pdf',
+            );
+
+        return response()->download($file, 'Resumes.pdf', $headers);
     }
 
     /**

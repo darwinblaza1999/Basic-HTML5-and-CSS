@@ -15,8 +15,6 @@
                     <a class="hire-me-btn btn waves-effect waves-
                      btn-large" href="#login">Hire me<i class="mdi-content-send left"></i>
                     </a>
-                    <!-- Call to About Button -->
-                    {{-- <button class="btn btn-floating waves-effect waves-light btn-large white call-to-about"><i class="material-icons">play_for_work</i></button> --}}
                     </div>
                 </div>
                 </div>
@@ -51,7 +49,7 @@
                             </ul>
                           </div>
                           <div class="resume-download col s12 m12 l6">
-                            <a href="{{ url('/download') }}" class="waves-effect waves-light btn-large resume-btn"><i class="mdi-content-archive left"></i> Download Resume</a>
+                            <a href="{{ route('about.create') }}" class="waves-effect waves-light btn-large resume-btn"><i class="mdi-content-archive left"></i> Download Resume</a>
                           </div>
                         </div>
                       </div>
@@ -239,31 +237,6 @@
                         <i class="material-icons view-icon">pageview</i>
                       </a>
                     </div>
-                    <!-- <div class="mix design" data-value="9">
-                      <a href="#">
-                        <img src="img/portfolio/design/design-2.jpg" alt="img">
-                        <i class="material-icons view-icon">pageview</i>
-                      </a>
-                    </div>
-                    <div class="mix html" data-value="12">
-                      <a href="#">
-                        <img src="img/portfolio/html/html-3.jpg" alt="img">
-                        <i class="material-icons view-icon">pageview</i>
-                      </a>
-                    </div>
-                    <div class="mix fashion" data-value="7">
-                      <a href="#">
-                        <img src="img/portfolio/fashion/fashion-3.jpg" alt="img">
-                        <i class="material-icons view-icon">pageview</i>
-                      </a>
-                    </div>
-                    <div class="mix design" data-value="6">
-                      <a href="#">
-                        <img src="img/portfolio/design/design-3.jpg" alt="img">
-                        <i class="material-icons view-icon">pageview</i>
-                      </a>
-                    </div> -->
-
                   </div>
                 </div>
               </div>
@@ -567,11 +540,6 @@
                                 </div>
                                 <button class="left waves-effect btn-flat brand-text submit-btn" type="submit">send message</button>
                               </form>
-                            </div>
-                          </div>
-                          <div class="col s12 m6 l6">
-                            <div class="contact-map">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.297314036103!2d-86.74954699999999!3d34.672444999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88626565a94cdb25%3A0x74c206053b6a97c9!2s305+Crosan+Bulcao%2C+Talisay,City%2C+AL+35758%2C+USA!5e0!3m2!1sen!2sbd!4v1431591462160" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
                             </div>
                           </div>
                         </div>
