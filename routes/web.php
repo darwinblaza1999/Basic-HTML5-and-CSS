@@ -24,17 +24,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/download', function () {
-    $_FILES = public_path()."/download/Resumes.docx";
-
-    $headers = array(
-        "Content-Type: application/png",
-    );
-
-    return Response::download($_FILES, "Resumes.docx, $headers");
-
-});
-
 // Route::resource('/users', UserController::class);
 
 Route::namespace('App\\Http\\Controllers')->group(function(){
